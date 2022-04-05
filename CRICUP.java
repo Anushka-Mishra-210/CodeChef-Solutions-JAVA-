@@ -9,22 +9,21 @@ class Codechef
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-	   Scanner sc = new Scanner(System.in);
-	    int T = sc.nextInt();
-	    
-	    if(T>=1 && T<=100)
-	    {
-	        for(int i =1; i<=T; i++)
-	        {
-	            int X = sc.nextInt();
-	            int Y = sc.nextInt();
-	            int D = sc.nextInt();  
-	              int diff = X-Y;
-	              if((Math.abs(diff)) <= D)
-	              System.out.println("YES");
-	              else 
-	              System.out.println("NO");}}
-	              
-	              // your code goes here
+	  Scanner sc= new Scanner(System.in);
+	  int t=sc.nextInt();
+	  for(int i=0;i<t;i++)
+	  {
+	      int x=sc.nextInt();
+	      int y=sc.nextInt();
+	      int d=sc.nextInt();
+	      if(Math.abs(x-y)<=d)
+	      {
+	          System.out.println("yes");
+	      }
+	      else
+	      {
+	          System.out.println("no");
+	      }
+	  }
 	}
 }
